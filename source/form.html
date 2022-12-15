@@ -47,8 +47,8 @@
 
     <section class="intro">
       <img class="intro__banner" src="img/text-sedona-index.svg" alt="Приветственный баннер" width="282" height="214">
-      <h2 class="intro__title title">Оставьте свой отзыв</h2>
-      <p class="intro__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <h2 class="intro__title intro__title--inner-page title">Оставьте свой отзыв</h2>
+      <p class="intro__description description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
   </header>
 
@@ -82,14 +82,14 @@
     <fieldset class="feedback-form__fieldset">
       <legend class="feedback-form__legend title">Ваше общее впечатление:</legend>
 
-      <input class="visually-hidden" type="radio" name="impression" value="good" id="good">
-      <label class="feedback-form__radio-label" for="good">Скорее положительное:</label>
+      <input class="visually-hidden" type="radio" name="impression" value="good" id="good" checked>
+      <label class="feedback-form__radio-label" for="good">Скорее положительное</label>
 
       <input class="visually-hidden" type="radio" name="impression" value="bad" id="bad">
-      <label class="feedback-form__radio-label" for="bad">Скорее положительное:</label>
+      <label class="feedback-form__radio-label" for="bad">Скорее отрицательное</label>
 
       <input class="visually-hidden" type="radio" name="impression" value="unclear" id="unclear">
-      <label class="feedback-form__radio-label" for="unclear">Скорее положительное:</label>
+      <label class="feedback-form__radio-label" for="unclear">Затрудняюсь ответить</label>
 
     </fieldset>
 
@@ -147,6 +147,19 @@
 
     <a class="author" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
   </footer>
+
+  <div class="popup fail-popup">
+    <h2 class="popup__title">Что-то пошло не так!</h2>
+    <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="popup__button button">Ок</button>
+  </div>
+
+  <div class="popup success-popup">
+    <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+    <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
+    <button class="popup__button button">Закрыть окно</button>
+  </div>
+
 </body>
 
 </html>
