@@ -52,6 +52,77 @@
     </section>
   </header>
 
+  <form class="feedback-form" action="#" method="get">
+    <fieldset class="feedback-form__fieldset">
+      <legend class="feedback-form__legend title">Представьтесь:</legend>
+      <label class="feedback-form__input-label">Имя*:
+        <input class="feedback-form__input input" type="text" name="name" placeholder="Имя" required>
+      </label>
+
+      <label class="feedback-form__input-label">Фамилия*:
+        <input class="feedback-form__input input" type="text" name="lastname" placeholder="Фамилия" required>
+      </label>
+
+      <label class="feedback-form__input-label">Отчество:
+        <input class="feedback-form__input input" type="text" name="patronymic" placeholder="Отчество">
+      </label>
+    </fieldset>
+
+    <fieldset class="feedback-form__fieldset">
+      <legend class="feedback-form__legend title">Контактная информация:</legend>
+      <label class="feedback-form__input-label">Контактный телефон*:
+        <input class="feedback-form__input input input--phone" type="tel" name="phone" placeholder="Введите телефон" required>
+      </label>
+
+      <label class="feedback-form__input-label">Электронная почта*:
+        <input class="feedback-form__input input input--email" type="email" name="email" placeholder="Введите e-mail" required>
+      </label>
+    </fieldset>
+
+    <fieldset class="feedback-form__fieldset">
+      <legend class="feedback-form__legend title">Ваше общее впечатление:</legend>
+
+      <input class="visually-hidden" type="radio" name="impression" value="good" id="good">
+      <label class="feedback-form__radio-label" for="good">Скорее положительное:</label>
+
+      <input class="visually-hidden" type="radio" name="impression" value="bad" id="bad">
+      <label class="feedback-form__radio-label" for="bad">Скорее положительное:</label>
+
+      <input class="visually-hidden" type="radio" name="impression" value="unclear" id="unclear">
+      <label class="feedback-form__radio-label" for="unclear">Скорее положительное:</label>
+
+    </fieldset>
+
+    <fieldset class="feedback-form__fieldset">
+      <legend class="feedback-form__legend title">Посещенные достопримечательности:</legend>
+
+      <input class="visually-hidden" type="checkbox" name="landmarks" value="devil-bridge" id="devil-bridge" checked>
+      <label class="feedback-form__checkbox-label" for="devil-bridge">Мост Дьявола</label>
+
+      <input class="visually-hidden" type="checkbox" name="landmarks" value="mount-bell" id="mount-bell" checked>
+      <label class="feedback-form__checkbox-label" for="mount-bell">Гора-Колокол</label>
+
+      <input class="visually-hidden" type="checkbox" name="landmarks" value="slide-park" id="slide-park" checked>
+      <label class="feedback-form__checkbox-label" for="slide-park">Гора-Колокол</label>
+
+      <input class="visually-hidden" type="checkbox" name="landmarks" value="rocks" id="rocks">
+      <label class="feedback-form__checkbox-label" for="rocks">Гора-Колокол</label>
+
+    </fieldset>
+
+    <fieldset class="feedback-form__fieldset">
+      <legend class="feedback-form__legend title">Опишите свои эмоции:</legend>
+      <textarea class="feedback-form__comment" name="comments">
+        Опишите подробно все свои восторги
+      </textarea>
+
+    </fieldset>
+
+    <div class="feedback-form__inner">
+      <button class="feedback-form__submit-button button" type="submit">Отправить отзыв</button>
+      <span class="feedback-form__note">* — обязательные поля</span>
+    </div>
+  </form>
 
   <footer class="main-footer">
     <h2 class="title title--bigger">#VISITSEDONA</h2>
