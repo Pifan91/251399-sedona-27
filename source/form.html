@@ -56,7 +56,7 @@
 
     <form class="feedback-form" action="#" method="get">
       <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend title">Представьтесь:</legend>
+        <legend class="feedback-form__title title">Представьтесь:</legend>
         <label class="feedback-form__input-label">Имя*:
           <input class="feedback-form__input input" type="text" name="name" placeholder="Имя" value="Пётр" required>
         </label>
@@ -71,7 +71,7 @@
       </fieldset>
 
       <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend title">Контактная информация:</legend>
+        <legend class="feedback-form__title title">Контактная информация:</legend>
         <label class="feedback-form__input-label">Контактный телефон*:
           <input class="feedback-form__input input input--phone" type="tel" name="phone" placeholder="Введите телефон" required>
         </label>
@@ -82,7 +82,7 @@
       </fieldset>
 
       <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend title">Ваше общее впечатление:</legend>
+        <legend class="feedback-form__title title">Ваше общее впечатление:</legend>
 
         <input class="visually-hidden" type="radio" name="impression" value="good" id="good" checked>
         <label class="feedback-form__radio-label" for="good">Скорее положительное</label>
@@ -96,7 +96,7 @@
       </fieldset>
 
       <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend title">Посещенные достопримечательности:</legend>
+        <legend class="feedback-form__title title">Посещенные достопримечательности:</legend>
 
         <input class="visually-hidden" type="checkbox" name="landmarks" value="devil-bridge" id="devil-bridge" checked>
         <label class="feedback-form__checkbox-label" for="devil-bridge">Мост Дьявола</label>
@@ -113,8 +113,8 @@
       </fieldset>
 
       <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend title">Опишите свои эмоции:</legend>
-        <textarea class="feedback-form__comment" name="comments" placeholder="Опишите подробно все свои восторги"></textarea>
+        <label class="feedback-form__title title">Опишите свои эмоции:</label>
+        <textarea class="feedback-form__comment" name="comment" id="comment" placeholder="Опишите подробно все свои восторги"></textarea>
 
       </fieldset>
 
@@ -126,7 +126,7 @@
   </main>
 
   <footer class="main-footer">
-    <a class="hashtag title">#VISITSEDONA</a>
+    <a class="hashtag title" href="#">#VISITSEDONA</a>
 
     <ul class="social-list">
       <li class="social-list__item">
