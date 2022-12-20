@@ -1,0 +1,18 @@
+.hamburger {
+  display: block;
+  width: 23px;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  background-image: url("../../img/icon-menu.svg");
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger--open {
+  width: 22px;
+
+  background-image: url("../../img/icon-cross.svg");
+}

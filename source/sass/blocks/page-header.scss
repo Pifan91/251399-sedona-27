@@ -1,0 +1,23 @@
+.page-header {
+  min-height: 600px;
+  padding: 90px 0 37px;
+
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.page-header__text-banner {
+  display: block;
+  margin: 0 auto 118px;
+}
+
+.page-header__title {
+  margin: 0 0 37px;
+  padding: 0 30px;
+}
+
+.page-header__description {
+  margin: 0;
+  padding: 0 36px;
+}
