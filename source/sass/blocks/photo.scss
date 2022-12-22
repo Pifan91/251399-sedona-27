@@ -1,0 +1,35 @@
+.photo {
+  margin: 0;
+}
+
+.photo__image {
+  display: block;
+  width: 280px;
+  height: 280px;
+
+  background-color: $gray-d6;
+}
+
+.photo__description-text {
+  margin: 0 0 10px;
+}
+
+.photo__name {
+  margin: 0;
+  padding: 16px 0 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: $black-color;
+}
+
+.photo__author {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $text-color;
+  text-transform: none;
+}

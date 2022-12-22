@@ -1,0 +1,14 @@
+.gallery {
+  margin: 0;
+  padding: 10px 0 0;
+
+  list-style: none;
+
+  border-bottom: 1px solid $gray-e5;
+}
+
+.gallery__item {
+  padding: 24px 20px;
+
+  border-top: 1px solid $gray-e5;
+}
