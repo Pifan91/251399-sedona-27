@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -12,10 +14,10 @@
 
     <nav class="main-navigation">
       <ul class="main-navigation__list">
-        <li class="main-navigation__list-item">
-          <a href="#" class="main-navigation__logo">
+        <li class="main-navigation__list-item main-navigation__list-item--logo">
+          <a href="#">
             <picture class="logo">
-              <img src="#" alt="Логотип города Седона" width="185" height="96">
+              <img src="img/logo.svg" alt="Логотип города Седона" width="185" height="96">
             </picture>
           </a>
         </li>
@@ -57,28 +59,34 @@
     <form class="feedback-form" action="#" method="get">
       <fieldset class="feedback-form__fieldset">
         <legend class="feedback-form__title title">Представьтесь:</legend>
-        <label class="feedback-form__input-label">Имя*:
-          <input class="feedback-form__input input" type="text" name="name" placeholder="Имя" value="Пётр" required>
-        </label>
 
-        <label class="feedback-form__input-label">Фамилия*:
-          <input class="feedback-form__input input" type="text" name="lastname" placeholder="Фамилия" value="Пустота" required>
-        </label>
+        <div class="feedback-form__input-wrapper">
+          <label class="feedback-form__input-label" for="name">Имя*:</label>
+          <input class="feedback-form__input input" type="text" name="name" id="name" placeholder="Имя" value="Пётр" required>
+        </div>
 
-        <label class="feedback-form__input-label">Отчество:
-          <input class="feedback-form__input input" type="text" name="patronymic" placeholder="Отчество" value="Викторович">
-        </label>
+        <div class="feedback-form__input-wrapper">
+          <label class="feedback-form__input-label" for="lastname">Фамилия*:</label>
+          <input class="feedback-form__input input" type="text" name="lastname" id="lastname" placeholder="Фамилия" value="Пустота" required>
+        </div>
+
+        <div class="feedback-form__input-wrapper">
+          <label class="feedback-form__input-label" for="patronymic">Отчество:</label>
+          <input class="feedback-form__input input" type="text" name="patronymic" id="patronymic" placeholder="Отчество" value="Викторович">
+        </div>
       </fieldset>
 
       <fieldset class="feedback-form__fieldset">
         <legend class="feedback-form__title title">Контактная информация:</legend>
-        <label class="feedback-form__input-label">Контактный телефон*:
-          <input class="feedback-form__input input input--phone" type="tel" name="phone" placeholder="Введите телефон" required>
-        </label>
+        <div class="feedback-form__input-wrapper">
+          <label class="feedback-form__input-label" for="phone">Контактный телефон*:</label>
+          <input class="feedback-form__input input input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+        </div>
 
-        <label class="feedback-form__input-label">Электронная почта*:
-          <input class="feedback-form__input input input--email" type="email" name="email" placeholder="Введите e-mail" required>
-        </label>
+        <div class="feedback-form__input-wrapper">
+          <label class="feedback-form__input-label" for="email">Электронная почта*:</label>
+          <input class="feedback-form__input input input--email" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+        </div>
       </fieldset>
 
       <fieldset class="feedback-form__fieldset">
@@ -95,7 +103,7 @@
 
       </fieldset>
 
-      <fieldset class="feedback-form__fieldset">
+      <fieldset class="feedback-form__fieldset feedback-form__fieldset--checkbox">
         <legend class="feedback-form__title title">Посещенные достопримечательности:</legend>
 
         <input class="visually-hidden" type="checkbox" name="landmarks" value="devil-bridge" id="devil-bridge" checked>
@@ -105,16 +113,16 @@
         <label class="feedback-form__checkbox-label" for="mount-bell">Гора-Колокол</label>
 
         <input class="visually-hidden" type="checkbox" name="landmarks" value="slide-park" id="slide-park" checked>
-        <label class="feedback-form__checkbox-label" for="slide-park">Гора-Колокол</label>
+        <label class="feedback-form__checkbox-label" for="slide-park">Слайд-парк</label>
 
         <input class="visually-hidden" type="checkbox" name="landmarks" value="rocks" id="rocks">
-        <label class="feedback-form__checkbox-label" for="rocks">Гора-Колокол</label>
+        <label class="feedback-form__checkbox-label" for="rocks">Красные скалы</label>
 
       </fieldset>
 
       <fieldset class="feedback-form__fieldset">
         <label class="feedback-form__title title">Опишите свои эмоции:</label>
-        <textarea class="feedback-form__comment" name="comment" id="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+        <textarea class="feedback-form__comment input" name="comment" id="comment" placeholder="Опишите подробно все свои восторги"></textarea>
 
       </fieldset>
 
@@ -126,9 +134,9 @@
   </main>
 
   <footer class="main-footer">
-    <a class="hashtag title" href="#">#VISITSEDONA</a>
+    <a class="main-footer__hashtag hashtag title" href="#">#VISITSEDONA</a>
 
-    <ul class="social-list">
+    <ul class="main-footer__social-list social-list">
       <li class="social-list__item">
         <a href="#" class="social-list__link social-list__link--vk button">
           <span class="visually-hidden">Ссылка на VK</span>

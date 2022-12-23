@@ -1,0 +1,16 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 156px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  row-gap: 10px;
+}
+
+.social-list__link {
+  width: 48px;
+  height: 48px;
+}

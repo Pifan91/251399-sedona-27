@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -12,10 +14,10 @@
 
     <nav class="main-navigation">
       <ul class="main-navigation__list">
-        <li class="main-navigation__list-item">
-          <a href="#" class="main-navigation__logo">
+        <li class="main-navigation__list-item main-navigation__list-item--logo">
+          <a href="#">
             <picture class="logo">
-              <img src="#" alt="Логотип города Седона" width="185" height="96">
+              <img src="img/logo.svg" alt="Логотип города Седона" width="185" height="96">
             </picture>
           </a>
         </li>
@@ -66,7 +68,7 @@
               <h2 class="photo__name">Неродные просторы</h2>
               <p class="photo__author">Автор фото: Борис</p>
             </div>
-            <button class="like">1350 <span class="visuall-hidden">человек лайкнули это фото</span></button>
+            <button class="like">1350 <span class="visually-hidden">человек лайкнули это фото</span></button>
           </figcaption>
         </figure>
       </li>
@@ -83,7 +85,7 @@
               <h2 class="photo__name">Местная растительность</h2>
               <p class="photo__author">Автор фото: Сергей</p>
             </div>
-            <button class="like">143 <span class="visuall-hidden">человек лайкнули это фото</span></button>
+            <button class="like">143 <span class="visually-hidden">человек лайкнули это фото</span></button>
           </figcaption>
         </figure>
       </li>
@@ -100,7 +102,7 @@
               <h2 class="photo__name">Дорога на север</h2>
               <p class="photo__author">Автор фото: Петр</p>
             </div>
-            <button class="like">96 <span class="visuall-hidden">человек лайкнули это фото</span></button>
+            <button class="like">96 <span class="visually-hidden">человек лайкнули это фото</span></button>
           </figcaption>
         </figure>
       </li>
@@ -117,23 +119,23 @@
               <h2 class="photo__name">Мост дьявола</h2>
               <p class="photo__author">Автор фото: Антон</p>
             </div>
-            <button class="like">254 <span class="visuall-hidden">человек лайкнули это фото</span></button>
+            <button class="like">254 <span class="visually-hidden">человек лайкнули это фото</span></button>
           </figcaption>
         </figure>
       </li>
     </ul>
 
     <section class="video">
-      <h2 class="video__title title">Вы еще сомневаетесь?</h2>
+      <h2 class="video__title title">Все еще сомневаетесь?</h2>
       <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video class="video__player" poster="#"></video>
+      <video class="video__player" width="280" height="177" poster="#"></video>
     </section>
   </main>
 
   <footer class="main-footer">
-    <a class="hashtag title" href="#">#VISITSEDONA</a>
+    <a class="main-footer__hashtag hashtag title" href="#">#VISITSEDONA</a>
 
-    <ul class="social-list">
+    <ul class="main-footer__social-list social-list">
       <li class="social-list__item">
         <a href="#" class="social-list__link social-list__link--vk button">
           <span class="visually-hidden">Ссылка на VK</span>

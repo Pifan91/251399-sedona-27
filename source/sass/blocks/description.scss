@@ -1,0 +1,13 @@
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-align: center;
+  color: $text-color;
+  text-transform: uppercase;
+
+  &--light {
+    color: $white-color;
+  }
+}
