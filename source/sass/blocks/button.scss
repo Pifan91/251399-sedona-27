@@ -12,4 +12,42 @@
 
   background-color: $main-light-blue-color;
   border: none;
+
+  &:hover {
+    background-color: $main-blue-color;
+  }
+
+  &:active {
+    color: $white-color-opacity-3;
+
+    background-color: $main-dark-blue-color;
+  }
+
+  &:disabled {
+    color: $white-color;
+
+    background-color: $gray-e5;
+    cursor: default;
+  }
+
+  &--disabled {
+    color: $white-color;
+
+    background-color: $gray-e5;
+    cursor: default;
+
+    &:hover {
+      color: $white-color;
+
+      background-color: $gray-e5;
+      cursor: default;
+    }
+
+    &:active {
+      color: $white-color;
+
+      background-color: $gray-e5;
+      cursor: default;
+    }
+  }
 }
