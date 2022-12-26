@@ -13,6 +13,13 @@
     background-image: url("../../img/back-mobile-index.jpg");
     background-position: 0 0;
   }
+
+
+  @media (min-width: $tablet-width) {
+    &--index {
+      min-height: 724px;
+    }
+  }
 }
 
 .page-header__text-banner {
@@ -21,6 +28,12 @@
 
   &--index {
     margin-bottom: 118px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--index {
+      margin-bottom: 262px;
+    }
   }
 }
 
@@ -31,9 +44,18 @@
   &--index {
     margin-bottom: 37px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 80px;
+
+    &--index {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .page-header__description {
   margin: 0;
   padding: 0 15px;
 }
+
