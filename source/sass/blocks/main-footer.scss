@@ -10,6 +10,10 @@
     align-items: center;
     padding: 36px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 120px 32px;
+  }
 }
 
 .main-footer__hashtag {
@@ -33,4 +37,3 @@
     margin: 0 12px 0 0;
   }
 }
-

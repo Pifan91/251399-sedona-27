@@ -35,6 +35,12 @@
       margin-bottom: 262px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--index {
+      margin-bottom: 275px;
+    }
+  }
 }
 
 .page-header__title {
@@ -52,10 +58,21 @@
       margin-bottom: 30px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 250px;
+
+    &--index {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .page-header__description {
   margin: 0;
   padding: 0 15px;
-}
 
+  @media (min-width: $desktop-width) {
+    padding: 0 250px;
+  }
+}
