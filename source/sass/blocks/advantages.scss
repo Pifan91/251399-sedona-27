@@ -131,7 +131,11 @@
 
 .advantages__list-item-description {
   margin: 0;
-  padding: 0 10px;
+  padding: 0 15px;
+
+  &--light {
+    padding: 0 10px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
