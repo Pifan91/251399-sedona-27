@@ -1,5 +1,5 @@
 .page-header {
-  padding: 52px 0 27px;
+  padding: 52px 0 23px;
 
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 
   &--index {
     min-height: 600px;
-    padding: 90px 0 37px;
+    padding: 90px 0 33px;
 
     background-image: url("../../img/back-mobile-index.jpg");
     background-position: 0 0;
@@ -31,6 +31,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto 264px;
+
     &--index {
       margin-bottom: 262px;
     }
@@ -52,10 +54,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 21px;
     padding: 0 80px;
+
+    font-size: 30px;
 
     &--index {
       margin-bottom: 30px;
+
+      font-size: 21px;
     }
   }
 
@@ -71,6 +78,16 @@
 .page-header__description {
   margin: 0;
   padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 165px;
+
+    line-height: 23px;
+
+    &--index {
+      padding: 0 100px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 250px;
