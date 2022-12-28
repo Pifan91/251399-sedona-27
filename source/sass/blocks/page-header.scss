@@ -1,5 +1,5 @@
 .page-header {
-  padding: 52px 0 23px;
+  padding: 52px 0 27px;
 
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 
   &--index {
     min-height: 600px;
-    padding: 90px 0 33px;
+    padding: 90px 0 38px;
 
     background-image: url("../../img/back-mobile-index.jpg");
     background-position: 0 0;
@@ -16,6 +16,8 @@
 
 
   @media (min-width: $tablet-width) {
+    padding: 52px 0 23px;
+
     &--index {
       min-height: 724px;
     }
@@ -34,13 +36,15 @@
     margin: 0 auto 264px;
 
     &--index {
-      margin-bottom: 262px;
+      margin-bottom: 300px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto 324px;
+
     &--index {
-      margin-bottom: 275px;
+      margin-bottom: 312px;
     }
   }
 }
@@ -67,6 +71,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 31px;
     padding: 0 300px;
 
     &--index {
@@ -90,6 +95,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 250px;
+    padding: 0 380px;
+
+    &--index {
+      padding: 0 250px;
+    }
   }
 }

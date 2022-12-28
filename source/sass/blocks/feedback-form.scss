@@ -8,6 +8,12 @@
     grid-template: "name contacts" "feedback feedback" "landmarks landmarks" "comment comment" "button button";
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px 60px;
+
+    grid-template-columns: 494px 1fr;
+  }
 }
 
 .feedback-form__fieldset {
@@ -76,6 +82,29 @@
       grid-area: comment;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--name {
+      padding: 97px 63px 0 0;
+    }
+
+    &--contacts {
+      padding: 97px 0 0 64px;
+    }
+
+    &--feedback {
+      padding: 128px 43px 0 53px;
+
+      grid-column-gap: 60px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &--landmarks {
+      display: flex;
+      justify-content: space-between;
+      padding: 169px 45px 42px;
+    }
+  }
 }
 
 .feedback-form__title {
@@ -93,17 +122,31 @@
 
     padding: 0 140px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 55px;
+
+    padding: 0 280px;
+  }
 }
 
 .feedback-form__fieldset--name .feedback-form__title,
 .feedback-form__fieldset--contacts .feedback-form__title {
-  top: 80px;
+  @media (min-width: $tablet-width) {
+    top: 80px;
 
-  padding: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 43px;
+  }
 }
 
 .feedback-form__fieldset--comment .feedback-form__title {
-  top: 27px;
+  @media (min-width: $tablet-width) {
+    top: 27px;
+  }
 }
 
 .feedback-form__input-wrapper {
@@ -189,6 +232,12 @@
   @media (min-width: $tablet-width) {
     min-height: 160px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 
 .feedback-form__inner {
@@ -202,10 +251,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 42px 0 0;
+    width: 100%;
+    max-width: 768px;
+    margin: 42px auto 0;
     padding: 0;
 
     grid-area: button;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 48px auto 0;
   }
 }
 
@@ -216,6 +271,10 @@
   @media (min-width: $tablet-width) {
     max-width: 324px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 384px;
   }
 }
 
