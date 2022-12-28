@@ -5,10 +5,36 @@
   list-style: none;
 
   border-bottom: 1px solid $gray-e5;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding: 55px 60px 30px;
+
+    border: 0;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 0 35px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .gallery__item {
   padding: 24px 20px;
 
   border-top: 1px solid $gray-e5;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    border: none;
+
+    &:first-child {
+      grid-column-end: -1;
+      grid-column-start: 1;
+    }
+  }
 }

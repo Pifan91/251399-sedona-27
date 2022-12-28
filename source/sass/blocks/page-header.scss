@@ -22,6 +22,10 @@
       min-height: 724px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 540px;
+  }
 }
 
 .page-header__text-banner {
@@ -41,7 +45,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 324px;
+    margin: 0 auto 316px;
 
     &--index {
       margin-bottom: 312px;
@@ -67,6 +71,10 @@
       margin-bottom: 30px;
 
       font-size: 21px;
+    }
+
+    &--catalog {
+      margin: 0 0 32px;
     }
   }
 
