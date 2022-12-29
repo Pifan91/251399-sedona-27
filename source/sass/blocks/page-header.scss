@@ -18,8 +18,12 @@
   @media (min-width: $tablet-width) {
     padding: 52px 0 23px;
 
+    background-size: 100% 345px;
+
     &--index {
       min-height: 724px;
+
+      background-size: 100% 518px;
     }
   }
 
