@@ -25,6 +25,10 @@
 
   @media (min-width: $desktop-width) {
     min-height: 540px;
+
+    &--index {
+      min-height: 724px;
+    }
   }
 }
 
