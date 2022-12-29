@@ -14,21 +14,21 @@
 
     <nav class="main-navigation">
       <ul class="main-navigation__list">
-        <li class="main-navigation__list-item main-navigation__list-item--logo">
-          <a href="#">
-            <picture class="logo">
-              <img src="img/logo.svg" alt="Логотип города Седона" width="185" height="96">
-            </picture>
-          </a>
-        </li>
         <li class="main-navigation__list-item">
-          <a href="#" class="main-navigation__list-link">
+          <a href="#" class="main-navigation__list-link main-navigation__list-link--current">
             Главная
           </a>
         </li>
         <li class="main-navigation__list-item">
           <a href="#" class="main-navigation__list-link">
             Фото и видео
+          </a>
+        </li>
+        <li class="main-navigation__list-item main-navigation__list-item--logo">
+          <a class="logo" href="#">
+            <picture class="logo__picture">
+              <img src="img/logo.svg" alt="Логотип города Седона" width="185" height="96">
+            </picture>
           </a>
         </li>
         <li class="main-navigation__list-item">
@@ -51,14 +51,14 @@
   <main>
     <header class="page-header">
       <img class="page-header__text-banner" src="img/text-inner.svg" alt="Приветственный баннер" width="229" height="39">
-      <h2 class="page-header__title title">Фото и видео</h2>
+      <h2 class="page-header__title page-header__title--catalog title">Фото и видео</h2>
       <p class="page-header__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
     </header>
 
     <ul class="gallery">
       <li class="gallery__item">
         <figure class="photo">
-          <a class="photo__image" href="#">
+          <a class="photo__image photo__image--main" href="#">
             <picture>
               <img src="#" alt="Неродные просторы" width="280" height="280">
             </picture>
@@ -153,7 +153,7 @@
       </li>
     </ul>
 
-    <a class="author" href="https://htmlacademy.ru/intensive/adaptive">
+    <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано
       <img src="img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
     </a>

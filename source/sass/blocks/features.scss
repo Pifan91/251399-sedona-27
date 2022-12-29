@@ -5,6 +5,10 @@
   list-style: none;
 
   background-color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .features__item {
@@ -34,16 +38,35 @@
     top: 0;
     left: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 330px;
+    padding: 157px 32px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 169px 50px 20px;
+  }
 }
 
 .features__item-title {
   margin: 0 0 17px;
 
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 23px;
+
+    text-align: center;
+  }
 }
 
 .features__item-description {
   margin: 0;
 
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }

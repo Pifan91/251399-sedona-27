@@ -1,3 +1,8 @@
 .map {
   min-height: 350px;
+  margin: 0 0 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

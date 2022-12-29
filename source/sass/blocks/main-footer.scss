@@ -2,13 +2,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0 0;
+  padding: 15px 0 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 120px 32px;
+  }
 }
 
 .main-footer__hashtag {
   margin: 0 0 33px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__social-list {
   margin: 0 0 33px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.main-footer__author {
+  @media (min-width: $tablet-width) {
+    margin: 0 12px 0 0;
+  }
 }

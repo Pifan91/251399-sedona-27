@@ -14,21 +14,21 @@
 
     <nav class="main-navigation">
       <ul class="main-navigation__list">
-        <li class="main-navigation__list-item main-navigation__list-item--logo">
-          <a href="#">
-            <picture class="logo">
-              <img src="img/logo.svg" alt="Логотип города Седона" width="185" height="96">
-            </picture>
-          </a>
-        </li>
         <li class="main-navigation__list-item">
-          <a href="#" class="main-navigation__list-link">
+          <a href="#" class="main-navigation__list-link main-navigation__list-link--current">
             Главная
           </a>
         </li>
         <li class="main-navigation__list-item">
           <a href="#" class="main-navigation__list-link">
             Фото и видео
+          </a>
+        </li>
+        <li class="main-navigation__list-item main-navigation__list-item--logo">
+          <a class="logo" href="#">
+            <picture class="logo__picture">
+              <img src="img/logo.svg" alt="Логотип города Седона" width="185" height="96">
+            </picture>
           </a>
         </li>
         <li class="main-navigation__list-item">
@@ -52,7 +52,7 @@
     <header class="page-header page-header--index">
       <img class="page-header__text-banner page-header__text-banner--index" src="img/text-index.svg" alt="Приветственный баннер" width="282" height="214">
       <h2 class="page-header__title page-header__title--index title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p class="page-header__description description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <p class="page-header__description page-header__description--index description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </header>
 
     <section class="advantages">
@@ -61,7 +61,7 @@
         <li class="advantages__list-item advantages__list-item--with-photo">
           <div class="advantages__list-item-text advantages__list-item-text--blue-back">
             <h2 class="advantages__list-item-title title title--light">Настоящий городок</h2>
-            <p class="advantages__list-item-description description description--light">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <p class="advantages__list-item-description advantages__list-item-description--light description description--light">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <picture class="advantages__list-item-photo">
             <img src="#" alt="Архитектура Седоны" width="520" height="260">
@@ -74,11 +74,11 @@
             </li>
             <li class="features__item features__item--food">
               <h2 class="features__item-title title">Еда</h2>
-              <p class="features__item-description description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p class="features__item-description description">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
             </li>
             <li class="features__item features__item--souvenirs">
               <h2 class="features__item-title title">Сувениры</h2>
-              <p class="features__item-description description">Не только китайского, но и местного производства!</p>
+              <p class="features__item-description description">Не только китайского, но&nbsp;и местного производства!</p>
             </li>
           </ul>
         </li>
@@ -86,7 +86,7 @@
         <li class="advantages__list-item advantages__list-item--with-photo advantages__list-item--reverse">
           <div class="advantages__list-item-text advantages__list-item-text--blue-back">
             <h2 class="advantages__list-item-title title title--light">Там есть мост дьявола</h2>
-            <p class="advantages__list-item-description description description--light">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <p class="advantages__list-item-description advantages__list-item-description--light description description--light">Да, по нему можно пройти! Если&nbsp;вы осмелитесь,&nbsp;конечно</p>
           </div>
           <picture class="advantages__list-item-photo">
             <img src="#" alt="Скалы Седоны" width="520" height="260">
@@ -102,13 +102,13 @@
         <li class="advantages__list-item">
           <div class="advantages__list-item-text">
             <h2 class="advantages__list-item-title title">Красивая дорога</h2>
-            <p class="advantages__list-item-description description">Ехать в&nbsp;седону из&nbsp;Лас-Вегаса совсем&nbsp;не&nbsp;скучно!</p>
+            <p class="advantages__list-item-description description">Ехать в седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
           </div>
         </li>
         <li class="advantages__list-item">
           <div class="advantages__list-item-text">
             <h2 class="advantages__list-item-title title">Мало туристов</h2>
-            <p class="advantages__list-item-description description">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
+            <p class="advantages__list-item-description description">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </li>
       </ol>
@@ -116,7 +116,7 @@
 
     <section class="interest">
       <h2 class="interest__title title">Заинтересовались?</h2>
-      <p class="interest__description description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
+      <p class="interest__description description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
       <a class="interest__button button" href="#">Найти гостиницу</a>
     </section>
 
@@ -146,7 +146,7 @@
       </li>
     </ul>
 
-    <a class="author" href="https://htmlacademy.ru/intensive/adaptive">
+    <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано
       <img src="img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
     </a>

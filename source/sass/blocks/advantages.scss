@@ -2,6 +2,10 @@
   padding: 10px 0 0;
 
   background-color: $main-light-blue-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .advantages__list {
@@ -9,10 +13,32 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .advantages__list-item {
   background-color: $gray-ee;
+
+  @media (min-width: $tablet-width) {
+    &--with-photo {
+      display: grid;
+
+      grid-column-end: -1;
+      grid-column-start: 1;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    &--reverse {
+      display: grid;
+
+      grid-template-columns: 2fr 1fr;
+    }
+  }
 }
 
 .advantages__list-item-text {
@@ -43,6 +69,27 @@
       display: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 256px;
+    padding: 52px 18px 20px;
+
+    &::after {
+      display: none;
+    }
+
+    &--blue-back {
+      padding: 53px 20px 31px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 64px 18px 20px;
+
+    &--blue-back {
+      padding: 53px 20px 31px;
+    }
+  }
 }
 
 .advantages__list-item:last-child {
@@ -71,11 +118,28 @@
 
     counter-increment: advantage;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 23px;
+    padding: 0 33px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 105px 34px;
+  }
 }
 
 .advantages__list-item-description {
   margin: 0;
-  padding: 0 10px;
+  padding: 0 15px;
+
+  &--light {
+    padding: 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
 }
 
 .advantages__list-item-photo {
@@ -84,4 +148,25 @@
   min-height: 260px;
 
   background-color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+  }
+}
+
+.advantages__list-item--reverse .advantages__list-item-photo {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.advantages__sublist {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding: 0;
+
+    grid-column-end: -1;
+    grid-column-start: 1;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
