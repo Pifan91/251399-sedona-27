@@ -121,12 +121,43 @@
     top: 47px;
 
     padding: 0 140px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 123px;
+      height: 1px;
+
+      background-color: $gray-db;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      width: 123px;
+      height: 1px;
+
+      background-color: $gray-db;
+      transform: translateY(-50%);
+    }
   }
 
   @media (min-width: $desktop-width) {
     top: 55px;
 
-    padding: 0 280px;
+    padding: 0 300px;
+
+    &::before,
+    &::after {
+      width: 280px;
+    }
   }
 }
 
@@ -136,6 +167,14 @@
     top: 80px;
 
     padding: 0;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

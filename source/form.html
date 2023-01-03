@@ -13,7 +13,7 @@
     <h1 class="visually-hidden">Седона — небольшой городок в Аризоне</h1>
 
     <nav class="main-navigation">
-      <ul class="main-navigation__list">
+      <ul class="main-navigation__list main-navigation__list--open">
         <li class="main-navigation__list-item">
           <a href="#" class="main-navigation__list-link main-navigation__list-link--current">
             Главная
@@ -80,12 +80,16 @@
         <legend class="feedback-form__title title">Контактная информация:</legend>
         <div class="feedback-form__input-wrapper">
           <label class="feedback-form__input-label" for="phone">Контактный телефон*:</label>
-          <input class="feedback-form__input input input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+          <div class="custom-input-wrapper custom-input-wrapper--phone">
+            <input class="feedback-form__input input input--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+          </div>
         </div>
 
         <div class="feedback-form__input-wrapper">
           <label class="feedback-form__input-label" for="email">Электронная почта*:</label>
-          <input class="feedback-form__input input input--email" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+          <div class="custom-input-wrapper custom-input-wrapper--mail">
+            <input class="feedback-form__input input input--email" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+          </div>
         </div>
       </fieldset>
 
@@ -170,7 +174,7 @@
     <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
     <button class="popup__button button">Закрыть окно</button>
   </div>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

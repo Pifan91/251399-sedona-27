@@ -1,4 +1,7 @@
 .input {
+  position: relative;
+
+  width: 100%;
   margin: 0;
   padding: 12px;
 
@@ -23,5 +26,10 @@
     background-color: $white-color;
     border: 4px solid $gray-e5;
     outline: none;
+  }
+
+  &--phone,
+  &--email {
+    padding-right: 72px;
   }
 }
