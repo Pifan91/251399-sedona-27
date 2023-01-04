@@ -26,9 +26,9 @@
         </li>
         <li class="main-navigation__list-item main-navigation__list-item--logo">
           <a class="logo" href="#">
-            <picture class="logo__picture">
-              <img src="img/logo.svg" alt="Логотип города Седона" width="185" height="96">
-            </picture>
+            <svg class="logo__picture">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
           </a>
         </li>
         <li class="main-navigation__list-item">
@@ -50,7 +50,9 @@
 
   <main>
     <header class="page-header page-header--index">
-      <img class="page-header__text-banner page-header__text-banner--index" src="img/text-index.svg" alt="Приветственный баннер" width="282" height="214">
+      <svg class="page-header__text-banner page-header__text-banner--index">
+        <use xlink:href="img/sprite.svg#text-index"></use>
+      </svg>
       <h2 class="page-header__title page-header__title--index title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="page-header__description page-header__description--index description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </header>
@@ -68,15 +70,24 @@
           </picture>
 
           <ul class="advantages__sublist features">
-            <li class="features__item features__item--housing">
+            <li class="features__item">
+              <svg class="features__item-icon">
+                <use xlink:href="img/sprite.svg#icon-house"></use>
+              </svg>
               <h2 class="features__item-title title">Жилье</h2>
               <p class="features__item-description description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="features__item features__item--food">
+            <li class="features__item">
+              <svg class="features__item-icon">
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
+              </svg>
               <h2 class="features__item-title title">Еда</h2>
               <p class="features__item-description description">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
             </li>
-            <li class="features__item features__item--souvenirs">
+            <li class="features__item">
+              <svg class="features__item-icon">
+                <use xlink:href="img/sprite.svg#icon-gift"></use>
+              </svg>
               <h2 class="features__item-title title">Сувениры</h2>
               <p class="features__item-description description">Не только китайского, но&nbsp;и местного производства!</p>
             </li>
@@ -122,7 +133,7 @@
 
     <section class="map">
       <h2 class="visually-hidden">Седона на карте</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565774555!2d-111.8301578595786!3d34.854443815278216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1672753083907!5m2!1sru!2sru" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565774555!2d-111.8301578595786!3d34.854443815278216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1672753083907!5m2!1sru!2sru" width="100%" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
 
@@ -131,17 +142,26 @@
 
     <ul class="main-footer__social-list social-list">
       <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--vk button">
+        <a href="#" class="social-list__link button">
+          <svg class="social-list__link-icon social-list__link-icon--vk">
+            <use xlink:href="img/sprite.svg#icon-vk"></use>
+          </svg>
           <span class="visually-hidden">Ссылка на VK</span>
         </a>
       </li>
       <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--tw button">
-          <span class="visually-hidden">Ссылка на Twitter</span>
+        <a href="#" class="social-list__link button">
+          <svg class="social-list__link-icon social-list__link-icon--tg">
+            <use xlink:href="img/sprite.svg#icon-tg"></use>
+          </svg>
+          <span class="visually-hidden">Ссылка на Telegram</span>
         </a>
       </li>
       <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--you button">
+        <a href="#" class="social-list__link button">
+          <svg class="social-list__link-icon social-list__link-icon--youtube">
+            <use xlink:href="img/sprite.svg#icon-youtube"></use>
+          </svg>
           <span class="visually-hidden">Ссылка на Youtube</span>
         </a>
       </li>
@@ -149,7 +169,9 @@
 
     <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано
-      <img src="img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
+      <svg class="author__icon">
+        <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+      </svg>
     </a>
   </footer>
   <script src="js/script.js"></script>

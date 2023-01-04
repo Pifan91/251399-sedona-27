@@ -264,6 +264,21 @@
   }
 }
 
+input[type="checkbox"]:checked + .feedback-form__checkbox-label::after {
+  content: url("../../img/icon-tick.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+
+  border-radius: 4px;
+}
+
 .feedback-form__comment {
   width: 100%;
   min-height: 150px;

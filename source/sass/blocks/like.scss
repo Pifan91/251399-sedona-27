@@ -1,4 +1,6 @@
 .like {
+  position: relative;
+
   margin: 0;
   padding: 7px 0 0 37px;
 
@@ -9,4 +11,15 @@
 
   background: transparent;
   border: none;
+}
+
+.like__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 23px;
+  height: 21px;
+
+  fill: $black-color-opacity-3;
 }

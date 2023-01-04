@@ -26,9 +26,9 @@
         </li>
         <li class="main-navigation__list-item main-navigation__list-item--logo">
           <a class="logo" href="#">
-            <picture class="logo__picture">
-              <img src="img/logo.svg" alt="Логотип города Седона" width="185" height="96">
-            </picture>
+            <svg class="logo__picture">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
           </a>
         </li>
         <li class="main-navigation__list-item">
@@ -51,7 +51,9 @@
 
   <main>
     <header class="page-header">
-      <img class="page-header__text-banner" src="img/text-inner.svg" alt="Приветственный баннер" width="229" height="39">
+      <svg class="page-header__text-banner">
+        <use xlink:href="img/sprite.svg#text-inner"></use>
+      </svg>
       <h2 class="page-header__title title">Оставьте свой отзыв</h2>
       <p class="page-header__description description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </header>
@@ -141,17 +143,26 @@
 
     <ul class="main-footer__social-list social-list">
       <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--vk button">
+        <a href="#" class="social-list__link button">
+          <svg class="social-list__link-icon social-list__link-icon--vk">
+            <use xlink:href="img/sprite.svg#icon-vk"></use>
+          </svg>
           <span class="visually-hidden">Ссылка на VK</span>
         </a>
       </li>
       <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--tw button">
-          <span class="visually-hidden">Ссылка на Twitter</span>
+        <a href="#" class="social-list__link button">
+          <svg class="social-list__link-icon social-list__link-icon--tg">
+            <use xlink:href="img/sprite.svg#icon-tg"></use>
+          </svg>
+          <span class="visually-hidden">Ссылка на Telegram</span>
         </a>
       </li>
       <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--you button">
+        <a href="#" class="social-list__link button">
+          <svg class="social-list__link-icon social-list__link-icon--youtube">
+            <use xlink:href="img/sprite.svg#icon-youtube"></use>
+          </svg>
           <span class="visually-hidden">Ссылка на Youtube</span>
         </a>
       </li>
@@ -159,7 +170,9 @@
 
     <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано
-      <img src="img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
+      <svg class="author__icon">
+        <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+      </svg>
     </a>
   </footer>
 
