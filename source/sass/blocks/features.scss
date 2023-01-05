@@ -18,16 +18,15 @@
 
   @media (min-width: $tablet-width) {
     min-height: 330px;
-    padding: 157px 32px 20px;
+    padding: 59px 32px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 169px 50px 20px;
+    padding: 69px 50px 20px;
   }
 }
 
 .features__item-icon {
-  content: "";
   position: absolute;
   top: 24px;
   left: 18px;
@@ -36,6 +35,31 @@
   height: 40px;
 
   fill: $main-light-blue-color;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+
+    display: block;
+    width: 77px;
+    height: 72px;
+    margin: 0 auto 27px;
+
+    &--gift {
+      width: 67px;
+      height: 79px;
+      margin: 0 auto 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80px;
+
+    &--gift {
+      width: 78px;
+      height: 75px;
+      margin: 0 auto 27px;
+    }
+  }
 }
 
 .features__item-title {

@@ -30,9 +30,11 @@
 
   @media (min-width: $desktop-width) {
     min-height: 540px;
+    padding: 100px 0 24px;
 
     &--index {
       min-height: 724px;
+      padding: 78px 0 23px;
     }
   }
 }
@@ -62,10 +64,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 316px;
+    margin: 0 auto 235px;
+
+    &--catalog {
+      margin: 0 auto 220px;
+    }
 
     &--index {
-      margin-bottom: 312px;
+      margin-bottom: 150px;
     }
   }
 }

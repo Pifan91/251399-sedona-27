@@ -10,4 +10,8 @@
   width: 27px;
   height: 34px;
   margin: 0 0 0 10px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 12px;
+  }
 }

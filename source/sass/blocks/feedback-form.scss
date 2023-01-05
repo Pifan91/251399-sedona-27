@@ -233,6 +233,19 @@
   }
 }
 
+input[type="radio"]:checked + .feedback-form__radio-label::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: $text-color;
+  border-radius: 50%;
+}
+
 .feedback-form__checkbox-label {
   position: relative;
 

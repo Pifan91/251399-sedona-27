@@ -11,6 +11,10 @@
 
   background: transparent;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    color: $white-color;
+  }
 }
 
 .like__icon {
@@ -22,4 +26,13 @@
   height: 21px;
 
   fill: $black-color-opacity-3;
+
+  @media (min-width: $tablet-width) {
+    top: 2px;
+    left: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: $white-color;
+  }
 }

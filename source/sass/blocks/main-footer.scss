@@ -8,7 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 60px;
+    padding: 38px 60px 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,8 +35,4 @@
 .main-footer__author {
   display: flex;
   align-items: center;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 12px 0 0;
-  }
 }
