@@ -79,7 +79,17 @@
 
   text-align: left;
 
+  & br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    & br {
+      display: block;
+    }
   }
 }
