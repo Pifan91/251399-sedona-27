@@ -41,9 +41,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
     flex-grow: 1;
     flex-basis: 153px;
+    justify-content: center;
+    min-height: 56px;
 
     &--logo {
       position: relative;
@@ -95,7 +97,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 56px;
+    padding: 0;
 
     font-size: 14px;
     line-height: 21px;

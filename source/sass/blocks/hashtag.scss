@@ -1,4 +1,12 @@
 .hashtag {
   font-size: 21px;
   text-decoration: none;
+
+  &:hover {
+    color: $main-light-blue-color;
+  }
+
+  &:active {
+    color: $black-color-opacity-3;
+  }
 }
