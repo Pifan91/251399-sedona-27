@@ -16,41 +16,92 @@
 
   padding: 32px 20px 0 65px;
 
+  &--house::before {
+    content: url("../../img/icon-house.svg");
+    position: absolute;
+    top: 28px;
+    left: 18px;
+
+    width: 39px;
+    height: 37px;
+  }
+
+  &--burger::before {
+    content: url("../../img/icon-burger.svg");
+    position: absolute;
+    top: 26px;
+    left: 18px;
+
+    width: 40px;
+    height: 35px;
+  }
+
+  &--gift::before {
+    content: url("../../img/icon-gift.svg");
+    position: absolute;
+    top: 29px;
+    left: 21px;
+
+    width: 35px;
+    height: 38px;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 330px;
-    padding: 59px 32px 20px;
+    padding: 61px 32px 20px;
+
+    &::before {
+      position: static;
+
+      display: block;
+      width: 77px;
+      height: 72px;
+      margin: 0 auto 25px;
+    }
+
+    &--house::before {
+      width: 77px;
+      height: 72px;
+    }
+
+    &--burger::before {
+      width: 76px;
+      height: 72px;
+      margin: 0 auto 23px;
+    }
+
+    &--gift::before {
+      width: 71px;
+      height: 75px;
+      margin: 6px auto 11px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 69px 50px 20px;
+
+    &::before {
+      width: 80px;
+      height: 72px;
+      margin: 0 auto 29px;
+    }
+
+    &--burger::before {
+      width: 76px;
+      height: 72px;
+      margin: 0 auto 26px;
+    }
+
+    &--gift::before {
+      width: 78px;
+      height: 75px;
+      margin: 0 auto 27px;
+    }
   }
 }
 
+/*
 .features__item-icon {
-  position: absolute;
-  top: 24px;
-  left: 18px;
-
-  width: 40px;
-  height: 40px;
-
-  fill: $main-light-blue-color;
-
-  @media (min-width: $tablet-width) {
-    position: static;
-
-    display: block;
-    width: 77px;
-    height: 72px;
-    margin: 0 auto 27px;
-
-    &--gift {
-      width: 67px;
-      height: 79px;
-      margin: 0 auto 15px;
-    }
-  }
-
   @media (min-width: $desktop-width) {
     width: 80px;
 
@@ -61,6 +112,8 @@
     }
   }
 }
+*/
+
 
 .features__item-title {
   margin: 0 0 17px;
