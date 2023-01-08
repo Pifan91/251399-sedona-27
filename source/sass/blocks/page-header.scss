@@ -1,77 +1,53 @@
 .page-header {
-  padding: 52px 0 27px;
+  padding: 194px 0 27px;
 
-  background-image: url("../../img/back-mobile.jpg");
+  background-image: url("../../img/text-inner.svg"), url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 0 -56px;
+  background-position: center 52px, center -56px;
+  background-size: 229px 39px, 320px 214px;
 
   &--index {
-    padding: 90px 0 15px;
+    padding: 422px 0 15px;
 
-    background-image: url("../../img/back-mobile-index.jpg");
-    background-position: 0 0;
-    background-size: 100% 389px;
+    background-image: url("../../img/text-index.svg"), url("../../img/back-mobile-index.jpg");
+    background-position: center 90px, center 0;
+    background-size: 282px 214px, 320px 389px;
   }
 
 
   @media (min-width: $tablet-width) {
-    min-height: 471px;
-    padding: 95px 0 24px;
+    padding: 354px 0 24px;
 
-    background-size: 100% 345px;
+    background-image: url("../../img/text-inner.svg"), url("../../img/back-tablet.jpg");
+    background-position: center 95px, center -55px;
+    background-size: 457px 78px, 768px 345px;
 
     &--index {
-      min-height: 724px;
-      padding: 78px 0 23px;
+      padding: 566px 0 53px;
 
-      background-size: 100% 518px;
+      background-image: url("../../img/text-index.svg"), url("../../img/back-tablet-index.jpg");
+      background-position: center 77px, center 0;
+      background-size: 461px 350px, 768px 518px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 540px;
-    padding: 100px 0 24px;
+    padding: 414px 0 24px;
+
+    background-image: url("../../img/text-inner.svg"), url("../../img/back-desktop.jpg");
+    background-position: center 102px, center -55px;
+    background-size: 457px 78px, 1200px 357px;
 
     &--index {
-      min-height: 724px;
-      padding: 78px 0 23px;
+      padding: 578px 0 41px;
+
+      background-image: url("../../img/text-index.svg"), url("../../img/back-desktop-index.jpg");
+      background-position: center 77px, center 0;
+      background-size: 461px 350px, 1200px 518px;
     }
-  }
-}
-
-.page-header__text-banner {
-  display: block;
-  width: 229px;
-  height: 39px;
-  margin: 0 auto 104px;
-
-  &--index {
-    width: 282px;
-    height: 214px;
-    margin-bottom: 118px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 457px;
-    height: 78px;
-    margin: 0 auto 181px;
-
-    &--index {
-      width: 461px;
-      height: 350px;
-      margin-bottom: 139px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 auto 235px;
 
     &--catalog {
-      margin: 0 auto 220px;
-    }
-
-    &--index {
-      margin-bottom: 150px;
+      padding: 398px 0 40px;
     }
   }
 }

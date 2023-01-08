@@ -6,16 +6,20 @@
   background-color: $main-light-blue-color;
 
   &::before {
-    content: url("../../img/advantages-top.svg");
+    //content: url("../../img/advantages-top.svg");
+    content: "";
     position: absolute;
     top: 0;
     left: 50%;
     z-index: 1;
 
     width: 100%;
-    max-width: 525px;
+    min-height: 37px;
 
+    background-color: $white-color;
     transform: translateX(-50%);
+
+    clip-path: polygon(168% 0, 50% 100%, -68% 0);
   }
 
   @media (min-width: $tablet-width) {

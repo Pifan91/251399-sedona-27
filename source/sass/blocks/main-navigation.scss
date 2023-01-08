@@ -87,6 +87,11 @@
     background-color: $main-blue-color;
   }
 
+  &:focus {
+    background-color: $main-blue-color;
+    outline: none;
+  }
+
   &:active {
     color: $white-color-opacity-3;
 
@@ -106,7 +111,8 @@
     background-color: transparent;
     box-shadow: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $main-light-blue-color;
 
       background-color: transparent;
