@@ -251,6 +251,10 @@
   }
 }
 
+input[type="radio"]:focus + .feedback-form__radio-label::before {
+  background-color: $gray-e5;
+}
+
 input[type="radio"]:checked + .feedback-form__radio-label::after {
   content: "";
   position: absolute;
@@ -307,6 +311,10 @@ input[type="radio"]:checked + .feedback-form__radio-label::after {
   &:active::after {
     opacity: 0.3;
   }
+}
+
+input[type="checkbox"]:focus + .feedback-form__checkbox-label::before {
+  background-color: $gray-e5;
 }
 
 input[type="checkbox"]:checked + .feedback-form__checkbox-label::after {

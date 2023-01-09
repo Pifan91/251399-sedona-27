@@ -11,6 +11,14 @@
     fill: $main-light-blue-color;
   }
 
+  &:focus {
+    color: $main-light-blue-color;
+
+    outline: none;
+
+    fill: $main-light-blue-color;
+  }
+
   &:active {
     color: $gray-b3;
 
