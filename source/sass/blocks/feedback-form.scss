@@ -105,6 +105,7 @@
 
     &--landmarks {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       padding: 169px 45px 42px;
     }
@@ -356,6 +357,7 @@ input[type="checkbox"]:checked + .feedback-form__checkbox-label::after {
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
