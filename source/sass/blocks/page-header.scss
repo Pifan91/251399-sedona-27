@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 95px 0 24px;
+    padding: 50px 0 24px;
 
     &--index {
       padding: 34px 0 53px;
@@ -14,14 +14,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 102px 0 24px;
+    padding: 98px 0 24px;
 
     &--index {
       padding: 45px 0 41px;
     }
 
     &--catalog {
-      padding: 398px 0 40px;
+      padding: 83px 0 41px;
     }
   }
 }

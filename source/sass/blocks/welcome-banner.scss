@@ -19,7 +19,8 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 95px 0 24px;
+    min-height: 305px;
+    padding: 95px 0 15px;
 
     background-image: url("../../img/back-tablet.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
     background-position: center -55px;
@@ -36,7 +37,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 102px 0 24px;
+    min-height: 316px;
+    padding: 102px 0 15px;
 
     background-image: url("../../img/back-desktop.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
     background-position: center -55px;
