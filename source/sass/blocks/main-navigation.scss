@@ -24,7 +24,7 @@
     position: static;
 
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -42,8 +42,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-grow: 1;
-    flex-basis: 153px;
+    flex-basis: 20%;
     justify-content: center;
     min-height: 56px;
 
