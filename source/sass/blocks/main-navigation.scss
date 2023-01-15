@@ -24,7 +24,7 @@
     position: static;
 
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -34,6 +34,7 @@
   &--logo {
     position: absolute;
     left: 50%;
+    z-index: 1;
 
     display: block;
 
@@ -41,9 +42,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: block;
-    flex-grow: 1;
-    flex-basis: 153px;
+    display: flex;
+    flex-basis: 20%;
+    justify-content: center;
+    min-height: 56px;
 
     &--logo {
       position: relative;
@@ -85,6 +87,11 @@
     background-color: $main-blue-color;
   }
 
+  &:focus {
+    background-color: $main-blue-color;
+    outline: none;
+  }
+
   &:active {
     color: $white-color-opacity-3;
 
@@ -95,7 +102,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 56px;
+    padding: 0;
 
     font-size: 14px;
     line-height: 21px;
@@ -104,7 +111,8 @@
     background-color: transparent;
     box-shadow: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $main-light-blue-color;
 
       background-color: transparent;
@@ -161,6 +169,8 @@
   top: 17px;
   right: 20px;
   z-index: 100;
+
+  display: none;
 
   @media (min-width: $tablet-width) {
     display: none;

@@ -4,9 +4,34 @@
   color: $black-color;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    color: $main-light-blue-color;
+
+    fill: $main-light-blue-color;
+  }
+
+  &:focus {
+    color: $main-light-blue-color;
+
+    outline: none;
+
+    fill: $main-light-blue-color;
+  }
+
+  &:active {
+    color: $gray-b3;
+
+    fill: $gray-b3;
+  }
 }
 
-.author img {
+.author__icon {
   width: 27px;
   height: 34px;
+  margin: 0 0 0 10px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 12px;
+  }
 }

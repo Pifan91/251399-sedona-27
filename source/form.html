@@ -10,34 +10,32 @@
 
 <body>
   <header class="main-header">
-    <h1 class="visually-hidden">Седона — небольшой городок в Аризоне</h1>
-
     <nav class="main-navigation">
-      <ul class="main-navigation__list">
+      <ul class="main-navigation__list main-navigation__list--open">
         <li class="main-navigation__list-item">
-          <a href="#" class="main-navigation__list-link main-navigation__list-link--current">
+          <a class="main-navigation__list-link" href="index.html">
             Главная
           </a>
         </li>
         <li class="main-navigation__list-item">
-          <a href="#" class="main-navigation__list-link">
+          <a class="main-navigation__list-link" href="catalog.html">
             Фото и видео
           </a>
         </li>
         <li class="main-navigation__list-item main-navigation__list-item--logo">
-          <a class="logo" href="#">
-            <picture class="logo__picture">
-              <img src="img/logo.svg" alt="Логотип города Седона" width="185" height="96">
-            </picture>
+          <a class="logo" href="index.html">
+            <svg class="logo__picture">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
           </a>
         </li>
         <li class="main-navigation__list-item">
-          <a href="#" class="main-navigation__list-link">
+          <a class="main-navigation__list-link main-navigation__list-link--current" aria-current="page" href="#">
             Форма отзыва
           </a>
         </li>
         <li class="main-navigation__list-item">
-          <a href="#" class="main-navigation__list-link">
+          <a class="main-navigation__list-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             HTML Academy
           </a>
         </li>
@@ -46,17 +44,18 @@
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
     </nav>
+    <div class="welcome-banner">
+      <img class="welcome-banner__image" width="229" height="39" src="img/text-inner.svg" alt="Добро пожаловать в Седону!">
+    </div>
   </header>
-
 
   <main>
     <header class="page-header">
-      <img class="page-header__text-banner" src="img/text-inner.svg" alt="Приветственный баннер" width="229" height="39">
-      <h2 class="page-header__title title">Оставьте свой отзыв</h2>
+      <h1 class="page-header__title title">Оставьте свой отзыв</h1>
       <p class="page-header__description description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </header>
 
-    <form class="feedback-form" action="#" method="get">
+    <form class="feedback-form" action="#" method="post">
       <fieldset class="feedback-form__fieldset feedback-form__fieldset--name">
         <legend class="feedback-form__title title">Представьтесь:</legend>
 
@@ -137,40 +136,42 @@
 
     <ul class="main-footer__social-list social-list">
       <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--vk button">
+        <a class="social-list__link social-list__link--vk button" href="#">
           <span class="visually-hidden">Ссылка на VK</span>
         </a>
       </li>
       <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--tw button">
-          <span class="visually-hidden">Ссылка на Twitter</span>
+        <a class="social-list__link social-list__link--tg button" href="#">
+          <span class="visually-hidden">Ссылка на Telegram</span>
         </a>
       </li>
       <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--you button">
+        <a class="social-list__link social-list__link--youtube button" href="#">
           <span class="visually-hidden">Ссылка на Youtube</span>
         </a>
       </li>
     </ul>
 
-    <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive">
+    <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
       Разработано
-      <img src="img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
+      <svg class="author__icon">
+        <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+      </svg>
     </a>
   </footer>
 
-  <div class="popup fail-popup">
-    <h2 class="popup__title">Что-то пошло не так!</h2>
+  <div class="popup popup--fail popup--fail">
+    <h2 class="popup__title">Что-то пошло не&nbsp;так!</h2>
     <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="popup__button button">Ок</button>
   </div>
 
-  <div class="popup success-popup">
+  <div class="popup popup--success">
     <h2 class="popup__title">Ваш отзыв отправлен!</h2>
-    <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
-    <button class="popup__button button">Закрыть окно</button>
+    <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте</p>
+    <button class="popup__button popup__button--big button">Закрыть окно</button>
   </div>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

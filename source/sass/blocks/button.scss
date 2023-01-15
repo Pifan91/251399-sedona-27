@@ -12,9 +12,15 @@
 
   background-color: $main-light-blue-color;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $main-blue-color;
+  }
+
+  &:focus {
+    background-color: $main-blue-color;
+    outline: none;
   }
 
   &:active {
