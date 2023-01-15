@@ -1,4 +1,6 @@
 .welcome-banner {
+  position: relative;
+
   min-height: 173px;
   padding: 52px 0 15px;
 
@@ -6,6 +8,20 @@
   background-repeat: no-repeat;
   background-position: center -56px;
   background-size: 320px 214px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    max-width: 1200px;
+    height: 57px;
+
+    background-image: url("../../img/intro-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center -15px;
+  }
 
   &--index {
     min-height: 404px;
@@ -25,6 +41,12 @@
     background-image: url("../../img/back-tablet.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
     background-position: center -55px;
     background-size: 768px 345px;
+
+    &::before {
+      bottom: 14px;
+
+      background-position: center top;
+    }
 
     &--index {
       min-height: 533px;
