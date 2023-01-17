@@ -9,6 +9,10 @@
   background-position: center -56px;
   background-size: 320px 214px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-mobile@2x.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -31,6 +35,10 @@
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: 320px 389px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-mobile-index@2x.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
+    }
   }
 
 
@@ -41,6 +49,10 @@
     background-image: url("../../img/back-tablet.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
     background-position: center -55px;
     background-size: 768px 345px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
+    }
 
     &::before {
       bottom: 14px;
@@ -55,6 +67,10 @@
       background-image: url("../../img/back-tablet-index.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
       background-position: center 0;
       background-size: 768px 518px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/back-tablet-index@2x.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
+      }
     }
   }
 
@@ -66,6 +82,10 @@
     background-position: center -55px;
     background-size: 1200px 357px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
+    }
+
     &--index {
       min-height: 533px;
       padding: 78px 0 15px;
@@ -73,6 +93,10 @@
       background-image: url("../../img/back-desktop-index.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
       background-position: center 0;
       background-size: 1200px 518px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/back-desktop-index@2x.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
+      }
     }
 
     &--catalog {

@@ -13,11 +13,41 @@
 
   background-color: $black-color-opacity-3;
 
+  & img {
+    display: block;
+    width: 280px;
+    height: 280px;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 267px;
 
+    & img {
+      width: 324px;
+      height: 267px;
+    }
+
     &--main {
       min-height: 400px;
+
+      & img {
+        width: 648px;
+        height: 400px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & img {
+      width: 400px;
+      height: 267px;
+    }
+
+    &--main {
+      & img {
+        width: 1200px;
+        height: 400px;
+      }
     }
   }
 }

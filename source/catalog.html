@@ -4,6 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,7 +20,7 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <ul class="main-navigation__list main-navigation__list--open">
+      <ul class="main-navigation__list main-navigation__list--open main-navigation__list--no-js">
         <li class="main-navigation__list-item">
           <a class="main-navigation__list-link" href="index.html">
             Главная
@@ -60,7 +69,9 @@
         <figure class="photo">
           <a class="photo__image photo__image--main" href="#">
             <picture>
-              <img src="#" alt="Неродные просторы" width="280" height="280">
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img width="280" height="280" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg" alt="Неродные просторы">
             </picture>
           </a>
           <figcaption class="photo__description">
@@ -82,7 +93,9 @@
         <figure class="photo">
           <a class="photo__image" href="#">
             <picture>
-              <img src="#" alt="Местная растительность" width="280" height="280">
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img width="280" height="280" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg" alt="Местная растительность">
             </picture>
           </a>
           <figcaption class="photo__description">
@@ -104,7 +117,9 @@
         <figure class="photo">
           <a class="photo__image" href="#">
             <picture>
-              <img src="#" alt="Дорога на север" width="280" height="280">
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img width="280" height="280" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg" alt="Дорога на север">
             </picture>
           </a>
           <figcaption class="photo__description">
@@ -126,7 +141,9 @@
         <figure class="photo">
           <a class="photo__image" href="#">
             <picture>
-              <img src="#" alt="Мост дьявола" width="280" height="280">
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img width="280" height="280" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg" alt="Мост дьявола">
             </picture>
           </a>
           <figcaption class="photo__description">
@@ -149,8 +166,10 @@
       <h2 class="video__title title">Все еще сомневаетесь?</h2>
       <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <div class="video__player">
-        <picture class="video__player-image">
-          <img width="280" height="177" src="img/video-mobile.jpg" alt="Видео про Седону">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="video__player-image" width="280" height="177" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg" alt="Видео про Седону">
         </picture>
         <button class="video__player-button">
           <span class="visually-hidden" type="button">Смотреть видео</span>

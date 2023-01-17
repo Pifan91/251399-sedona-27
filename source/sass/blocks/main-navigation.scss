@@ -20,6 +20,12 @@
 
   list-style: none;
 
+  &--no-js {
+    @media (max-width: $tablet-width) {
+      position: static;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     position: static;
 
@@ -57,12 +63,14 @@
 }
 
 .main-navigation__list--open .main-navigation__list-item {
-  z-index: 75;
+  @media (max-width: $tablet-width) {
+    z-index: 75;
 
-  display: block;
+    display: block;
 
-  &--logo {
-    z-index: 0;
+    &--logo {
+      z-index: 0;
+    }
   }
 }
 

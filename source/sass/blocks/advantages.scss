@@ -165,13 +165,19 @@
 
 .advantages__list-item-photo {
   display: block;
-  width: 100%;
-  min-height: 260px;
+  width: 320px;
+  height: 260px;
 
   background-color: $white-color;
 
   @media (min-width: $tablet-width) {
-    min-height: auto;
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 256px;
   }
 }
 

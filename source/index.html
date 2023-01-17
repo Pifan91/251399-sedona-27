@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <ul class="main-navigation__list main-navigation__list--open">
+      <ul class="main-navigation__list main-navigation__list--open main-navigation__list--no-js">
         <li class="main-navigation__list-item">
           <a class="main-navigation__list-link main-navigation__list-link--current" aria-current="page" href="#">
             Главная
@@ -63,8 +72,10 @@
             <h2 class="advantages__list-item-title title title--light">Настоящий городок</h2>
             <p class="advantages__list-item-description advantages__list-item-description--light description description--light">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <picture class="advantages__list-item-photo">
-            <img src="#" alt="Архитектура Седоны" width="520" height="260">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+            <img class="advantages__list-item-photo" width="320" height="260" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg" alt="Архитектура Седоны">
           </picture>
 
           <ul class="advantages__sublist features">
@@ -89,7 +100,9 @@
             <p class="advantages__list-item-description advantages__list-item-description--light description description--light">Да, по нему можно пройти! Если&nbsp;вы осмелитесь,&nbsp;конечно</p>
           </div>
           <picture class="advantages__list-item-photo">
-            <img src="#" alt="Скалы Седоны" width="520" height="260">
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+            <img class="advantages__list-item-photo" width="320" height="260" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg" alt="Скалы Седоны">
           </picture>
         </li>
 

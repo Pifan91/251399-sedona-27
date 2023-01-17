@@ -18,6 +18,7 @@ function checkWidth() {
 //Если JS не работает, меню по умолчанию открыто и нет кнопки гамбургера.
 if (mainNavigationList.classList.contains("main-navigation__list--open")) {
   mainNavigationList.classList.remove("main-navigation__list--open");
+  mainNavigationList.classList.remove("main-navigation__list--no-js");
   mainNavigationHamburger.style.display = "block";
   mainNavigationHamburger.addEventListener("click", openOrCloseMenu);
 }
