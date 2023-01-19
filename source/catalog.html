@@ -10,16 +10,19 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 
-  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin>
-  <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
+      <a class="main-navigation__logo logo" href="index.html">
+        <img class="logo__picture" width="185" height="96" src="img/logo.svg" alt="Логотип городка Седона">
+      </a>
       <ul class="main-navigation__list main-navigation__list--open main-navigation__list--no-js">
         <li class="main-navigation__list-item">
           <a class="main-navigation__list-link" href="index.html">
@@ -29,13 +32,6 @@
         <li class="main-navigation__list-item">
           <a class="main-navigation__list-link--current main-navigation__list-link" aria-current="page" href="#">
             Фото и видео
-          </a>
-        </li>
-        <li class="main-navigation__list-item main-navigation__list-item--logo">
-          <a class="logo" href="index.html">
-            <svg class="logo__picture">
-              <use xlink:href="img/sprite.svg#logo"></use>
-            </svg>
           </a>
         </li>
         <li class="main-navigation__list-item">
@@ -69,6 +65,10 @@
         <figure class="photo">
           <a class="photo__image photo__image--main" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
               <img width="280" height="280" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg" alt="Неродные просторы">
@@ -80,7 +80,7 @@
               <p class="photo__author">Автор фото: Борис</p>
             </div>
             <button class="like">
-              <svg class="like__icon">
+              <svg class="like__icon" width="23" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
               1350 <span class="visually-hidden">человек лайкнули это фото</span>
@@ -93,6 +93,10 @@
         <figure class="photo">
           <a class="photo__image" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
               <img width="280" height="280" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg" alt="Местная растительность">
@@ -104,7 +108,7 @@
               <p class="photo__author">Автор фото: Сергей</p>
             </div>
             <button class="like">
-              <svg class="like__icon">
+              <svg class="like__icon" width="23" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
               143 <span class="visually-hidden">человек лайкнули это фото</span>
@@ -117,6 +121,10 @@
         <figure class="photo">
           <a class="photo__image" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
               <img width="280" height="280" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg" alt="Дорога на север">
@@ -128,7 +136,7 @@
               <p class="photo__author">Автор фото: Петр</p>
             </div>
             <button class="like">
-              <svg class="like__icon">
+              <svg class="like__icon" width="23" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
               96 <span class="visually-hidden">человек лайкнули это фото</span>
@@ -141,6 +149,10 @@
         <figure class="photo">
           <a class="photo__image" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
               <img width="280" height="280" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg" alt="Мост дьявола">
@@ -152,7 +164,7 @@
               <p class="photo__author">Автор фото: Антон</p>
             </div>
             <button class="like">
-              <svg class="like__icon">
+              <svg class="like__icon" width="23" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
               254 <span class="visually-hidden">человек лайкнули это фото</span>
@@ -167,12 +179,16 @@
       <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <div class="video__player">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
           <img class="video__player-image" width="280" height="177" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg" alt="Видео про Седону">
         </picture>
-        <button class="video__player-button">
-          <span class="visually-hidden" type="button">Смотреть видео</span>
+        <button class="video__player-button" type="button">
+          <span class="visually-hidden">Смотреть видео</span>
         </button>
       </div>
     </section>
@@ -199,14 +215,14 @@
       </li>
     </ul>
 
-    <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+    <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт разработчика">
       Разработано
-      <svg class="author__icon">
+      <svg class="author__icon" width="27" height="35">
         <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
       </svg>
     </a>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

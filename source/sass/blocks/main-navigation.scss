@@ -6,6 +6,16 @@
   background-color: $white-color;
 }
 
+.main-navigation__logo {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+
+  display: block;
+
+  transform: translateX(-50%);
+}
+
 .main-navigation__list {
   position: absolute;
   top: 0;
@@ -37,27 +47,15 @@
 .main-navigation__list-item {
   display: none;
 
-  &--logo {
-    position: absolute;
-    left: 50%;
-    z-index: 1;
-
-    display: block;
-
-    transform: translateX(-50%);
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-basis: 20%;
     justify-content: center;
     min-height: 56px;
 
-    &--logo {
-      position: relative;
-      left: auto;
-
-      transform: none;
+    &:nth-child(3),
+    &:nth-child(7) {
+      margin-left: 20%;
     }
   }
 }
@@ -67,10 +65,6 @@
     z-index: 75;
 
     display: block;
-
-    &--logo {
-      z-index: 0;
-    }
   }
 }
 

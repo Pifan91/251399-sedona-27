@@ -10,16 +10,19 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
 
-    <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin>
-    <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
+      <a class="main-navigation__logo logo" href="index.html">
+        <img class="logo__picture" width="185" height="96" src="img/logo.svg" alt="Логотип городка Седона">
+      </a>
       <ul class="main-navigation__list main-navigation__list--open main-navigation__list--no-js">
         <li class="main-navigation__list-item">
           <a class="main-navigation__list-link" href="index.html">
@@ -29,13 +32,6 @@
         <li class="main-navigation__list-item">
           <a class="main-navigation__list-link" href="catalog.html">
             Фото и видео
-          </a>
-        </li>
-        <li class="main-navigation__list-item main-navigation__list-item--logo">
-          <a class="logo" href="index.html">
-            <svg class="logo__picture">
-              <use xlink:href="img/sprite.svg#logo"></use>
-            </svg>
           </a>
         </li>
         <li class="main-navigation__list-item">
@@ -129,7 +125,7 @@
       </fieldset>
 
       <fieldset class="feedback-form__fieldset feedback-form__fieldset--comment">
-        <label class="feedback-form__title title">Опишите свои эмоции:</label>
+        <label class="feedback-form__title title" for="comment">Опишите свои эмоции:</label>
         <textarea class="feedback-form__comment input" name="comment" id="comment" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
 
@@ -161,15 +157,15 @@
       </li>
     </ul>
 
-    <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+    <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт разработчика">
       Разработано
-      <svg class="author__icon">
+      <svg class="author__icon" width="27" height="35">
         <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
       </svg>
     </a>
   </footer>
 
-  <div class="popup popup--fail popup--fail">
+  <div class="popup popup--fail">
     <h2 class="popup__title">Что-то пошло не&nbsp;так!</h2>
     <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="popup__button button">Ок</button>
@@ -180,7 +176,7 @@
     <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте</p>
     <button class="popup__button popup__button--big button">Закрыть окно</button>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
