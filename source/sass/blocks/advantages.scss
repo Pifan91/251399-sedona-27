@@ -167,15 +167,11 @@
 .advantages__list-item-photo {
   display: block;
   width: 100%;
-  height: 260px;
+  height: auto;
 
   background-color: $white-color;
 
-  object-fit: fill;
-
-  @media (min-width: $tablet-width) {
-    height: 256px;
-  }
+  object-fit: contain;
 }
 
 .advantages__list-item--reverse .advantages__list-item-photo {
