@@ -1,18 +1,33 @@
 .welcome-banner {
   position: relative;
 
-  min-height: 173px;
-  padding: 52px 0 15px;
+  width: $minimal-width;
+  margin: 0 auto;
+  padding: 52px 18px 67px;
 
-  background-image: url("../../img/back-mobile.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
+  color: $white-color;
+
+  background-color: $welcome-banner-back;
+  background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center -56px;
-  background-size: 320px 214px;
+  background-position: center -231px;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-mobile@2x.jpg");
+  }
+
+  &--index {
+    padding: 90px 18px 85px;
+
+    background-position: center 0;
+  }
 
   &::before {
     content: "";
     position: absolute;
     bottom: 0;
+    left: 0;
 
     width: 100%;
     max-width: 1200px;
@@ -20,63 +35,42 @@
 
     background-image: url("../../img/intro-triangle.svg");
     background-repeat: no-repeat;
-    background-position: center -15px;
-  }
-
-  &--index {
-    min-height: 404px;
-    padding: 90px 0 15px;
-
-    background-image: url("../../img/back-mobile-index.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
-    background-repeat: no-repeat;
     background-position: center 0;
-    background-size: 320px 389px;
   }
-
 
   @media (min-width: $tablet-width) {
-    min-height: 305px;
-    padding: 95px 0 15px;
+    width: $tablet-width;
+    padding: 95px 60px 117px;
 
-    background-image: url("../../img/back-tablet.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
-    background-position: center -55px;
-    background-size: 768px 345px;
+    background-image: url("../../img/back-tablet.jpg");
+    background-position: center -228px;
 
-    &::before {
-      bottom: 14px;
-
-      background-position: center top;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.jpg");
     }
 
     &--index {
-      min-height: 533px;
-      padding: 77px 0 15px;
+      padding: 77px 60px 91px;
 
-      background-image: url("../../img/back-tablet-index.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
       background-position: center 0;
-      background-size: 768px 518px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 316px;
-    padding: 102px 0 15px;
+    width: $desktop-width;
+    padding: 102px 120px 120px;
 
-    background-image: url("../../img/back-desktop.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
-    background-position: center -55px;
-    background-size: 1200px 357px;
+    background-image: url("../../img/back-desktop.jpg");
+    background-position: center -217px;
 
-    &--index {
-      min-height: 533px;
-      padding: 78px 0 15px;
-
-      background-image: url("../../img/back-desktop-index.jpg"), linear-gradient(180deg, $black-color-opacity-3 0, $black-color-opacity-3 100%);
-      background-position: center 0;
-      background-size: 1200px 518px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.jpg");
     }
 
-    &--catalog {
-      padding: 398px 0 40px;
+    &--index {
+      padding: 78px 120px 90px;
+
+      background-position: center 0;
     }
   }
 }

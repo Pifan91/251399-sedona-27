@@ -67,7 +67,7 @@
 .advantages__list-item-text {
   position: relative;
 
-  padding: 26px 18px;
+  padding: 26px 33px;
 
   &::after {
     content: "";
@@ -92,23 +92,32 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 256px;
-    padding: 52px 18px 20px;
+    padding: 18px 28px;
 
     &::after {
       display: none;
     }
 
     &--blue-back {
-      padding: 53px 20px 31px;
+      justify-content: flex-start;
+      padding: 53px 33px 31px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 64px 18px 20px;
+    justify-content: flex-start;
+    padding: 65px 40px 20px;
+
+    &--pt-small {
+      padding: 52px 40px 20px;
+    }
 
     &--blue-back {
-      padding: 53px 20px 31px;
+      padding: 53px 60px 31px;
     }
   }
 }
@@ -142,37 +151,27 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 23px;
-    padding: 0 33px 34px;
+    padding: 0 0 34px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 105px 34px;
+    padding: 0 0 34px;
   }
 }
 
 .advantages__list-item-description {
   margin: 0;
-  padding: 0 15px;
-
-  &--light {
-    padding: 0 10px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 40px;
-  }
+  padding: 0;
 }
 
 .advantages__list-item-photo {
   display: block;
   width: 100%;
-  min-height: 260px;
+  height: auto;
 
   background-color: $white-color;
 
-  @media (min-width: $tablet-width) {
-    min-height: auto;
-  }
+  object-fit: contain;
 }
 
 .advantages__list-item--reverse .advantages__list-item-photo {

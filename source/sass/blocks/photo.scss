@@ -13,6 +13,14 @@
 
   background-color: $black-color-opacity-3;
 
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 267px;
 

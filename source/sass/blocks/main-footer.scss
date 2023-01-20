@@ -5,10 +5,10 @@
   padding: 15px 18px 37px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
     padding: 38px 60px 34px;
+
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +21,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+
+    text-align: left;
   }
 }
 
@@ -34,5 +36,12 @@
 
 .main-footer__author {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    &--main-page {
+      padding-right: 16px;
+    }
+  }
 }
