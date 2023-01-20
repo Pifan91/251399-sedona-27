@@ -1,7 +1,8 @@
 .welcome-banner {
   position: relative;
 
-  width: $minimal-width;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 52px 18px 67px;
 
@@ -11,7 +12,7 @@
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center -231px;
-  background-size: cover;
+  background-size: 100% 389px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/back-mobile@2x.jpg");
@@ -39,11 +40,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
     padding: 95px 60px 117px;
 
     background-image: url("../../img/back-tablet.jpg");
     background-position: center -228px;
+    background-size: 100% 518px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/back-tablet@2x.jpg");
@@ -57,7 +58,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
     padding: 102px 120px 120px;
 
     background-image: url("../../img/back-desktop.jpg");
