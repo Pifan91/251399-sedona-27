@@ -10,8 +10,8 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
 
-    <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
@@ -35,7 +35,7 @@
           </a>
         </li>
         <li class="main-navigation__list-item">
-          <a class="main-navigation__list-link main-navigation__list-link--current" aria-current="page" href="#">
+          <a class="main-navigation__list-link main-navigation__list-link--current" aria-current="page" href="form.html">
             Форма отзыва
           </a>
         </li>
@@ -45,7 +45,7 @@
           </a>
         </li>
       </ul>
-      <button class="main-navigation__hamburger hamburger">
+      <button class="main-navigation__toggle-button toggle-button">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
     </nav>
@@ -57,7 +57,7 @@
   <main>
     <header class="page-header">
       <h1 class="page-header__title title">Оставьте свой отзыв</h1>
-      <p class="page-header__description description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="page-header__description description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, <span class="line-break line-break--tablet">а также о посещенных вами достопримечательностях</span></p>
     </header>
 
     <form class="feedback-form" action="#" method="post">
@@ -157,7 +157,7 @@
       </li>
     </ul>
 
-    <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт разработчика">
+    <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт разработчика HTML Academy">
       Разработано
       <svg class="author__icon" width="27" height="35">
         <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>

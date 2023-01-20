@@ -1,0 +1,15 @@
+.line-break {
+  display: inline;
+
+  @media (min-width: $tablet-width) {
+    &--tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--desktop {
+      display: block;
+    }
+  }
+}

@@ -26,7 +26,7 @@
   border-top: 1px solid $gray-e5;
 
   &--landmarks {
-    padding: 100px 20px 24px;
+    padding: 96px 20px 27px;
   }
 
   &--feedback {
@@ -107,7 +107,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 169px 45px 42px;
+      padding: 165px 45px 45px;
     }
   }
 }
@@ -274,7 +274,7 @@ input[type="radio"]:checked + .feedback-form__radio-label::after {
 
   display: block;
   margin: 0 0 18px;
-  padding: 8px 0 10px 62px;
+  padding: 12px 0 6px 62px;
 
   font-weight: 700;
   font-size: 18px;
@@ -321,16 +321,11 @@ input[type="checkbox"]:focus + .feedback-form__checkbox-label::before {
 input[type="checkbox"]:checked + .feedback-form__checkbox-label::after {
   content: url("../../img/icon-tick.svg");
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 12px;
+  left: 12px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 46px;
-  height: 46px;
-
-  border-radius: 4px;
+  width: 22px;
+  height: 16px;
 }
 
 .feedback-form__comment {

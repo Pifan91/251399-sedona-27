@@ -104,7 +104,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
 
     font-size: 14px;
     line-height: 21px;
@@ -129,18 +128,12 @@
     &--current {
       color: $brown-color;
 
-      cursor: default;
-
       &:hover {
         color: $brown-color;
-
-        cursor: default;
       }
 
       &:active {
         color: $brown-color;
-
-        cursor: default;
       }
     }
   }
@@ -166,7 +159,7 @@
   }
 }
 
-.main-navigation__hamburger {
+.main-navigation__toggle-button {
   position: absolute;
   top: 17px;
   right: 20px;

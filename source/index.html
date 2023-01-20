@@ -10,8 +10,8 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
 
-    <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
@@ -20,12 +20,12 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-navigation__logo logo" href="#">
+      <a class="main-navigation__logo logo" aria-current="page" href="index.html">
         <img class="logo__picture" width="185" height="96" src="img/logo.svg" alt="Логотип городка Седона">
       </a>
       <ul class="main-navigation__list main-navigation__list--open main-navigation__list--no-js">
         <li class="main-navigation__list-item">
-          <a class="main-navigation__list-link main-navigation__list-link--current" aria-current="page" href="#">
+          <a class="main-navigation__list-link main-navigation__list-link--current" aria-current="page" href="index.html">
             Главная
           </a>
         </li>
@@ -45,7 +45,7 @@
           </a>
         </li>
       </ul>
-      <button class="main-navigation__hamburger hamburger">
+      <button class="main-navigation__toggle-button toggle-button">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
     </nav>
@@ -56,7 +56,7 @@
 
   <main>
     <header class="page-header page-header--index">
-      <p class="page-header__title page-header__title--index title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="page-header__title page-header__title--index title">Седона — небольшой городок в Аризоне, <span class="line-break line-break--tablet">заслуживающий&nbsp;большего!</span></p>
       <h1 class="page-header__description page-header__description--index description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h1>
     </header>
 
@@ -65,8 +65,8 @@
       <ol class="advantages__list">
         <li class="advantages__list-item advantages__list-item--with-photo">
           <div class="advantages__list-item-text advantages__list-item-text--blue-back">
-            <h2 class="advantages__list-item-title title title--light">Настоящий городок</h2>
-            <p class="advantages__list-item-description advantages__list-item-description--light description description--light">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <h2 class="advantages__list-item-title title title--light">Настоящий <span class="line-break line-break--tablet">городок</span></h2>
+            <p class="advantages__list-item-description description description--light">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
@@ -89,15 +89,15 @@
             </li>
             <li class="features__item features__item--gift">
               <h2 class="features__item-title title">Сувениры</h2>
-              <p class="features__item-description description">Не только китайского, но&nbsp;и местного производства!</p>
+              <p class="features__item-description description">Не только китайского, <span class="line-break line-break--desktop">но&nbsp;и местного производства!</span></p>
             </li>
           </ul>
         </li>
 
         <li class="advantages__list-item advantages__list-item--with-photo advantages__list-item--reverse">
           <div class="advantages__list-item-text advantages__list-item-text--blue-back">
-            <h2 class="advantages__list-item-title title title--light">Там есть мост дьявола</h2>
-            <p class="advantages__list-item-description advantages__list-item-description--light description description--light">Да, по нему можно пройти! Если&nbsp;вы осмелитесь,&nbsp;конечно</p>
+            <h2 class="advantages__list-item-title title title--light">Там есть <span class="line-break line-break--tablet">мост&nbsp;дьявола</span></h2>
+            <p class="advantages__list-item-description description description--light">Да, по нему можно пройти! <span class="line-break line-break--desktop">Если&nbsp;вы осмелитесь,&nbsp;конечно</span></p>
           </div>
           <picture class="advantages__list-item-photo">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
@@ -112,19 +112,19 @@
 
         <li class="advantages__list-item">
           <div class="advantages__list-item-text">
-            <h2 class="advantages__list-item-title title">Небольшая площадь</h2>
+            <h2 class="advantages__list-item-title title">Небольшая <span class="line-break line-break--tablet">площадь</span></h2>
             <p class="advantages__list-item-description description">Все интересные места находятся очень близко</p>
           </div>
         </li>
         <li class="advantages__list-item">
-          <div class="advantages__list-item-text">
-            <h2 class="advantages__list-item-title title">Красивая дорога</h2>
-            <p class="advantages__list-item-description description">Ехать в седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
+          <div class="advantages__list-item-text advantages__list-item-text--pt-small">
+            <h2 class="advantages__list-item-title title">Красивая <span class="line-break line-break--tablet">дорога</span></h2>
+            <p class="advantages__list-item-description description">Ехать в&nbsp;седону из&nbsp;Лас-Вегаса совсем <span class="line-break line-break--tablet">не&nbsp;скучно!</span></p>
           </div>
         </li>
         <li class="advantages__list-item">
           <div class="advantages__list-item-text">
-            <h2 class="advantages__list-item-title title">Мало туристов</h2>
+            <h2 class="advantages__list-item-title title">Мало <span class="line-break line-break--tablet">туристов</span></h2>
             <p class="advantages__list-item-description description">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </li>
@@ -133,7 +133,7 @@
 
     <section class="interest">
       <h2 class="interest__title title">Заинтересовались?</h2>
-      <p class="interest__description description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
+      <p class="interest__description description">Укажите предполагаемые даты поездки, <span class="line-break line-break--tablet">и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</span></p>
       <a class="interest__button button" href="search.html">Найти гостиницу</a>
     </section>
 
@@ -164,7 +164,7 @@
       </li>
     </ul>
 
-    <a class="main-footer__author author" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт разработчика">
+    <a class="main-footer__author main-footer__author--main-page author" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт разработчика HTML Academy">
       Разработано
       <svg class="author__icon" width="27" height="35">
         <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
